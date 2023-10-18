@@ -1,3 +1,9 @@
+# Generated output
+_site/
+
+# IntelliJ Configs
+.idea/
+
 # Logs
 logs
 *.log
