@@ -31,5 +31,5 @@ jobs:
           git reset
           git add _site/ -f
           git commit -m "Deploy to GitHub Pages"
-          echo "Using token: ${{{ secrets.GH_PAT }} | head -c 5"
+          echo "Using token: ${{ secrets.GH_PAT }} | head -c 5"
           git push https://${{ secrets.GH_PAT }}@github.com/Citizen-Knowledge-Graph/ckg-site.git HEAD:gh-pages --force
