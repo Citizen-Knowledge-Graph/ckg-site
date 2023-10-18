@@ -25,6 +25,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
+          echo "Using token: ${{{ secrets.GH_PAT }} | head -c 5"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout --orphan gh-pages
