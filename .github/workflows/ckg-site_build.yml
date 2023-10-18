@@ -24,7 +24,10 @@ jobs:
         run: npx @11ty/eleventy
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan gh-pages
+          git add _site/ -f
+          git commit -m "Deploy to GitHub Pages"
+          git push origin `git subtree split --prefix _site main`:gh-pages --force
