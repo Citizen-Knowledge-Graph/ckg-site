@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -23,13 +23,29 @@ jobs:
       - name: Build site with 11ty
         run: npx @11ty/eleventy
 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: ./_site
+
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan gh-pages
-          git reset
-          git add _site/ -f
-          git commit -m "Deploy to GitHub Pages"
-          echo "Using token: ${{ secrets.GH_PAT }} | head -c 5"
-          git push https://wbglaeser:${{ secrets.GH_PAT }}@github.com/Citizen-Knowledge-Graph/ckg-site.git HEAD:gh-pages --force
+        id: deployment
+        uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
