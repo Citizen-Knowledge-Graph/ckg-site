@@ -40,10 +40,17 @@ jobs:
       - name: Check built artifacts
         run: ls -l _site
 
-      - uses: actions/upload-artifact@v2
+      - name: Fix permissions
+        run: |
+          chmod -v -R +rX "_site/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
-          path: ./_site
+          path: _site
 
   # Deploy job
   deploy:
