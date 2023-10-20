@@ -26,7 +26,7 @@ jobs:
       - name: Check built artifacts
         run: ls -l _site
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v2
         with:
           name: github-pages
           path: ./_site
