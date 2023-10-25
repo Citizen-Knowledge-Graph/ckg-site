@@ -65,3 +65,10 @@ body, p, a {
     margin-bottom: 20px;
     color: darkblue;
 }
+
+@media (max-width: 768px) {  /* Typically, 768px is a breakpoint for tablets, adjust if needed */
+    .central-container {
+        padding-left: 8%;  /* Reduce padding for smaller screens */
+        padding-right: 8%; /* Reduce padding for smaller screens */
+    }
+}
