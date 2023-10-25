@@ -1,0 +1,59 @@
+/* Reset some default styles for better consistency */
+body, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkblue;
+    padding: 20px 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* This will center the actual content within the navbar */
+}
+
+.navbar-inner {
+    width: 70%; /* Same width as the central container */
+    padding-left: 25%; /* Left padding */
+    padding-right: 25%; /* Right padding */
+    display: flex;
+    align-items: center; /* This vertically centers the items if you ever change the navbar height */
+}
+
+.navbar a {
+    color: white;
+    margin-right: 15px; /* Space between links, remove margin from the last link */
+    text-decoration: none;
+}
+
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Central Scrollable Element */
+.central-container {
+    margin-top: 90px; /* Adjust according to navbar's height */
+    padding-left: 25%; /* Left padding */
+    padding-right: 25%; /* Right padding */
+    max-width: 70%; /* Or adjust according to your needs */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll; /* For vertical scrolling */
+    height: calc(100vh - 50px); /* Adjust according to navbar's height */
+    border: none; /* Remove the border or outline */
+    background-color: #ffffff; /* Set the background color of the central container to white (or any other color you want) */
+}
+
+.central-container p {
+    margin-bottom: 20px; /* Space between paragraphs or content */
+}

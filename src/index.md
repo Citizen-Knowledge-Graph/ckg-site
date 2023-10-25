@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Citizen Knowledge Graph</title>
-    <script defer data-domain="citizen-knowledge-graph.github.io/ckg-site" src="https://plausible.io/js/script.js"></script>
-</head>
-<style>
-    * {
-        font-family: Arial, serif;
-    }
-</style>
-<body>
-<div style="padding: 20px">
+---
+layout: mylayout.njk
+---
+<div>
     <h2 style="color: darkblue">Citizen Knowledge Graph</h2>
     <br/>
 
@@ -41,5 +31,3 @@
         </li>
     </ul>
 </div>
-</body>
-</html>

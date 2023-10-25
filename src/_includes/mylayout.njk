@@ -1,0 +1,28 @@
+---
+title: My Rad Blog
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Knowledge Graph</title>
+    <link rel="stylesheet" href="static/css/bundle.css">
+</head>
+<body>
+
+<!-- 1. Fixed Navbar -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- 2. Central Scrollable Element -->
+<div class="central-container">
+    {{ content | safe }}
+</div>
+</body>
+</html>
