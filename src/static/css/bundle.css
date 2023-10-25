@@ -11,7 +11,7 @@ body, p, a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: darkblue;
+    background-color: white;
     padding: 20px 0;
     z-index: 10;
     display: flex;
@@ -27,7 +27,8 @@ body, p, a {
 }
 
 .navbar a {
-    color: white;
+    color: darkblue;
+    font-weight: bold;
     margin-right: 15px; /* Space between links, remove margin from the last link */
     text-decoration: none;
 }
@@ -56,4 +57,11 @@ body, p, a {
 
 .central-container p {
     margin-bottom: 20px; /* Space between paragraphs or content */
+}
+
+.title-header {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: darkblue;
 }

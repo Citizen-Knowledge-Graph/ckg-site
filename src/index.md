@@ -2,7 +2,7 @@
 layout: mylayout.njk
 ---
 <div>
-    <h2 style="color: darkblue">Citizen Knowledge Graph</h2>
+    <h2 class="title-header">Citizen Knowledge Graph</h2>
     <br/>
 
     <h3>Der Kontext</h3>
