@@ -1,14 +1,2 @@
 # ckg-site
-Website for the Citizen Knowledge Graph project. Information about the idea, goals and team.
-
-## Setup
-
-```sh
-npm install
-```
-
-## Run
-
-```sh
-npx eleventy --serve # --> localhost:8080
-```
+Website for citizen-knowledge-graph project. Information on idea, goals and team.
