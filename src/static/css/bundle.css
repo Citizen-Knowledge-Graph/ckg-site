@@ -43,7 +43,7 @@ body, p, a {
 
 /* Central Scrollable Element */
 .central-container {
-    margin-top: 90px; /* Adjust according to navbar's height */
+    margin-top: 0; /* Adjust according to navbar's height */
     padding-left: 25%; /* Left padding */
     padding-right: 25%; /* Right padding */
     max-width: 70%; /* Or adjust according to your needs */
