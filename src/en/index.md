@@ -28,5 +28,8 @@ layout: layout.njk
         <li>
             <a href="https://youtu.be/2poGL8CeD8U">Demo video of the prototype (German, but auto-generated English subtitles available)</a>
         </li>
+        <li>
+            <a href="https://github.com/Citizen-Knowledge-Graph/">Our Code on GitHub</a>
+        </li>
     </ul>
 </div>
