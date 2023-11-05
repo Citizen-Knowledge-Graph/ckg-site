@@ -20,6 +20,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set environment variable
+        run: echo "ELEVENTY_ENV=production" >> $GITHUB_ENV
+
       - name: Checkout code
         uses: actions/checkout@v3
 
