@@ -2,8 +2,9 @@
 layout: layout.njk
 ---
 <div>
-    <h2 class="title-header">Citizen Knowledge Graph</h2>
-    <br/>
+    <div class="slogan-container">
+        <div class="title-header">Citizen Knowledge Graph</div>
+    </div>
 
     <h3>The context</h3>
     <p>We applied for the next funding-round from the <a href="https://prototypefund.de/en/">Prototype Fund</a> in the Civic Tech category with the "Citizen Knowledge Graph" project. If we get accepted, the funding period will last for 6 months starting in March 2024 and the three of us would share one full-time position.</p>

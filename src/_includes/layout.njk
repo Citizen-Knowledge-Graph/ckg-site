@@ -16,23 +16,28 @@ title: CKG
     </style>
 </head>
 <body>
-<div class="lang">
-    <a href="{% rootPath %}">DE</a> / <a href="{% rootPath %}en">EN</a>
-</div>
-<!-- 1. Fixed Navbar -->
-<!-- Deactivate Navbar for now
-<div class="navbar">
-    <div class="navbar-inner">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-</div>
--->
 
-<!-- 2. Central Scrollable Element -->
-<div class="central-container">
-    {{ content | safe }}
-</div>
+    <header class="fixed-navbar">
+        <div class="header-container">
+
+            <!-- Navigation Menu -->
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <!-- ... other links ... -->
+            </nav>
+
+            <!-- Language Selection -->
+            <div class="language-selection">
+                <a href="{% rootPath %}">DE</a> / <a href="{% rootPath %}en">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Central Scrollable Element -->
+    <div class="central-container">
+        {{ content | safe }}
+    </div>
 </body>
 </html>

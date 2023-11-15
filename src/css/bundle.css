@@ -6,51 +6,64 @@ body, p, a {
 }
 
 /* Fixed Navbar */
-.navbar {
+.fixed-navbar {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: white;
     padding: 20px 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center; /* This will center the actual content within the navbar */
+    background-color: #fff; /* or any color that fits your design */
+    z-index: 1000; /* ensures the navbar stays on top of other elements */
 }
 
-.navbar-inner {
-    width: 70%; /* Same width as the central container */
-    padding-left: 25%; /* Left padding */
-    padding-right: 25%; /* Right padding */
+.header-container {
+    padding-left: 20%;
+    padding-right: 20%;
+    max-width: 70%;
+    margin: 0 auto; /* centers the navbar content */
     display: flex;
-    align-items: center; /* This vertically centers the items if you ever change the navbar height */
+    justify-content: space-between; /* space out logo, nav, and language selection */
+    align-items: center; /* vertically aligns items in the navbar */
+}
+
+/* Fixed Navbar */
+.navbar {
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
 }
 
 .navbar a {
     color: darkblue;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header-container a {
+    color: darkblue;
     font-weight: bold;
-    margin-right: 15px; /* Space between links, remove margin from the last link */
     text-decoration: none;
 }
 
-.navbar a:last-child {
+.header-container a:last-child {
     margin-right: 0;
 }
 
-.navbar a:hover {
+.header-container a:hover {
     text-decoration: underline;
 }
 
 /* Central Scrollable Element */
 .central-container {
     margin-top: 0; /* Adjust according to navbar's height */
-    padding-left: 25%; /* Left padding */
-    padding-right: 25%; /* Right padding */
+    padding-top: 60px;
+    padding-left: 20%; /* Left padding */
+    padding-right: 20%; /* Right padding */
     max-width: 70%; /* Or adjust according to your needs */
     margin-left: auto;
     margin-right: auto;
     overflow-y: scroll; /* For vertical scrolling */
-    height: calc(100vh - 50px); /* Adjust according to navbar's height */
+    height: calc(100vh - 60px); /* Adjust according to navbar's height */
     border: none; /* Remove the border or outline */
     background-color: #ffffff; /* Set the background color of the central container to white (or any other color you want) */
 }
@@ -60,10 +73,17 @@ body, p, a {
 }
 
 .title-header {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0 0 0 0;
     color: darkblue;
+}
+
+.slogan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
 }
 
 @media (max-width: 768px) {  /* Typically, 768px is a breakpoint for tablets, adjust if needed */
