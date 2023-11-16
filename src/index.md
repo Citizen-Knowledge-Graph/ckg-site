@@ -6,6 +6,10 @@ layout: layout.njk
         <div class="title-header">Citizen Knowledge Graph</div>
     </div>
 
+    {% includeTemplate "site-element.njk" %}
+        this seems to be working
+    {% endincludeTemplate %}
+
     <h3>Der Kontext</h3>
     <p>Wir haben uns zu dritt mit dem Projekt "Citizen Knowledge Graph" für die nächste Förderrunde des <a href="https://prototypefund.de/">Prototype Fund</a> in der Kategorie Civic Tech beworben. Falls wir angenommen werden, geht die Förderphase 6 Monate lang ab März 2024 und wir würden uns zu dritt eine Vollzeitstelle teilen.</p>
 

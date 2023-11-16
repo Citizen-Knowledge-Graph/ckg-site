@@ -93,3 +93,10 @@ body, p, a {
         max-width: 90%; /* Or adjust according to your needs */
     }
 }
+
+.site-element {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    color: darkblue;
+}

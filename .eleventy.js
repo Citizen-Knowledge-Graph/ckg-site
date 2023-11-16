@@ -1,4 +1,16 @@
+const nunjucks = require("nunjucks");
+const path = require("path");
+
 module.exports = function(eleventyConfig) {
+    // Set up a Nunjucks environment
+    const nunjucksEnvironment = new nunjucks.Environment(
+        new nunjucks.FileSystemLoader(path.join(__dirname, "src/_includes"))
+    );
+
+    eleventyConfig.addPairedShortcode("includeTemplate", function(content, template) {
+        return nunjucksEnvironment.render(template, { content: content });
+    });
+
     eleventyConfig.addPassthroughCopy("src/css");
 
     // Default path for local development
