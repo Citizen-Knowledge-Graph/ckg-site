@@ -13,6 +13,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("src/css");
 
+    eleventyConfig.addPassthroughCopy("images");
+
     // Default path for local development
     let rootPath = "/";
 

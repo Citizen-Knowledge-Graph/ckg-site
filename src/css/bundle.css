@@ -2,6 +2,7 @@
 body, p, a {
     margin: 0;
     padding: 0;
+    color: #FF624A;
     font-family: Arial, sans-serif;
 }
 
@@ -34,13 +35,11 @@ body, p, a {
 }
 
 .navbar a {
-    color: darkblue;
     text-decoration: none;
     margin-right: 30px;
 }
 
 .header-container a {
-    color: darkblue;
     font-weight: bold;
     text-decoration: none;
 }
@@ -95,8 +94,57 @@ body, p, a {
 }
 
 .site-element {
-    font-size: 40px;
-    font-weight: bold;
+    height: calc((1/3) * (100vh - 60px)); /* Adjust according to navbar's height */
     margin: 0 0 0 0;
-    color: darkblue;
+}
+
+.banner-element {
+    height: 100%;
+    position: relative;
+}
+
+.banner-element::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/graph_dalle_v1.png');
+    background-size: cover; /* or whatever fits your needs */
+    opacity: 0.5;
+}
+
+.title-banner {
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 1.0;
+    z-index: 1;
+    position: relative;
+}
+
+.idee-banner {
+    height: 100%;
+}
+
+.idee-title {
+    font-size: 50px;
+    margin: 0 0 0 0;
+}
+
+.idee-text {
+    font-size: 20px;
+    color: black;
+}
+
+.team-banner {}
+
+.team-title {
+    font-size: 50px;
+    margin: 0 0 0 0;
+}
+
+.team-text {
+    font-size: 20px;
+    color: black;
 }
