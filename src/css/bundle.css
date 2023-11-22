@@ -52,10 +52,42 @@ body, p, a {
     text-decoration: underline;
 }
 
+/* Hamburger Icon - Initially hidden */
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    margin: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #FF624A;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/graph_dalle_v1.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Adjust for desired transparency level */
+    z-index: -1; /* Ensures the image stays behind the content */
+}
+
 /* Central Scrollable Element */
 .central-container {
-    margin-top: 0; /* Adjust according to navbar's height */
-    padding-top: 60px;
+    position: relative;
+    z-index: 1;
+    padding-top: 94px; /* Adjust according to navbar's height */
     padding-left: 20%; /* Left padding */
     padding-right: 20%; /* Right padding */
     max-width: 70%; /* Or adjust according to your needs */
@@ -64,87 +96,75 @@ body, p, a {
     overflow-y: scroll; /* For vertical scrolling */
     height: calc(100vh - 60px); /* Adjust according to navbar's height */
     border: none; /* Remove the border or outline */
-    background-color: #ffffff; /* Set the background color of the central container to white (or any other color you want) */
-}
-
-.central-container p {
-    margin-bottom: 20px; /* Space between paragraphs or content */
-}
-
-.title-header {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0 0 0 0;
-    color: darkblue;
-}
-
-.slogan-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 30px 0 30px 0;
-}
-
-@media (max-width: 768px) {  /* Typically, 768px is a breakpoint for tablets, adjust if needed */
-    .central-container {
-        padding-left: 7%;  /* Reduce padding for smaller screens */
-        padding-right: 7%; /* Reduce padding for smaller screens */
-        max-width: 90%; /* Or adjust according to your needs */
-    }
 }
 
 .site-element {
-    height: calc((1/3) * (100vh - 60px)); /* Adjust according to navbar's height */
+    min-height: 345px;
     margin: 0 0 0 0;
+    padding-bottom: 40px;
+    display: flex;
 }
 
-.banner-element {
-    height: 100%;
-    position: relative;
-}
-
-.banner-element::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('/images/graph_dalle_v1.png');
-    background-size: cover; /* or whatever fits your needs */
-    opacity: 0.5;
-}
-
-.title-banner {
-    font-size: 100px;
-    font-weight: bold;
-    opacity: 1.0;
-    z-index: 1;
-    position: relative;
-}
-
-.idee-banner {
-    height: 100%;
-}
-
-.idee-title {
+.site-element h3 {
     font-size: 50px;
     margin: 0 0 0 0;
 }
 
-.idee-text {
-    font-size: 20px;
+.site-element p {
+    font-size: 25px;
     color: black;
+    margin: 0 0 0 0;
 }
+
+.banner-title {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.banner-element {}
+
+.idee-banner {}
 
 .team-banner {}
 
-.team-title {
-    font-size: 50px;
-    margin: 0 0 0 0;
-}
+.partner-banner {}
 
-.team-text {
-    font-size: 20px;
-    color: black;
+@media (max-width: 640px) {
+    /* Hamburger Icon */
+    #hamburger-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /* Typically, 768px is a breakpoint for tablets, adjust if needed */
+    .banner-title {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    .site-element h3 {
+        font-size: 40px;
+        margin: 0 0 0 0;
+    }
+
+    .site-element p {
+        font-size: 18px;
+        color: black;
+        margin: 0 0 0 0;
+    }
+
+    .header-container {
+        padding-left: 7%;
+        padding-right: 7%;
+        max-width: 90%;
+    }
+
+    .central-container {
+        padding-left: 7%; /* Reduce padding for smaller screens */
+        padding-right: 7%; /* Reduce padding for smaller screens */
+        max-width: 90%; /* Or adjust according to your needs */
+    }
 }

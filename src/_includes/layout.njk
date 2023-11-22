@@ -14,11 +14,28 @@ title: CKG
           padding: 40px;
         }
     </style>
+    <script>
+    function toggleMenu() {
+        var links = document.getElementById("navbar-links");
+        if (links.style.display === "block") {
+            links.style.display = "none";
+        } else {
+            links.style.display = "block";
+        }
+    }
+    </script>
 </head>
 <body>
 
     <header class="fixed-navbar">
         <div class="header-container">
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger-icon" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
 
             <!-- Navigation Menu -->
             <nav class="navbar">
