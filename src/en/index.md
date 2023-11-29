@@ -6,7 +6,8 @@ layout: layout.njk
     <br/>
 
     <h3>The context</h3>
-    <p>We applied for the next funding-round from the <a href="https://prototypefund.de/en/">Prototype Fund</a> in the Civic Tech category with the "Citizen Knowledge Graph" project. If we get accepted, the funding period will last for 6 months starting in March 2024 and the three of us would share one full-time position.</p>
+    <p>
+    The three of us successfully applied for the next funding round of the <a href="https://prototypefund.de/en/">Prototype Fund</a> in the Civic Tech category with the "Citizen Knowledge Graph" project. The funding phase will last 6 months from March 2024. We will share one full-time position between us.</p>
     
     <h3>The team</h3>
     <p>All three of us are <a href="https://digitalservice.bund.de/en/fellowships/tech4germany">Tech4Germany</a> alumni. <a href="https://github.com/benjaminaaron">Benjamin</a> is currently working as a software developer in the "Neues Rechtsinformationssystem” project at DigitalService. <a href="https://espinosaureta.com/">Vanessa</a> improves digital administrative services at ifok. And <a href="https://github.com/wbglaeser">Ben</a> develops machine learning models at SoundCloud as a data engineer. Contact: <a href="mailto:citizenknowledgegraph@googlegroups.com">citizenknowledgegraph@googlegroups.com</a></p>

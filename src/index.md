@@ -6,7 +6,7 @@ layout: layout.njk
     <br/>
 
     <h3>Der Kontext</h3>
-    <p>Wir haben uns zu dritt mit dem Projekt "Citizen Knowledge Graph" für die nächste Förderrunde des <a href="https://prototypefund.de/">Prototype Fund</a> in der Kategorie Civic Tech beworben. Falls wir angenommen werden, geht die Förderphase 6 Monate lang ab März 2024 und wir würden uns zu dritt eine Vollzeitstelle teilen.</p>
+    <p>Wir haben uns zu dritt erfolgreich mit dem Projekt "Citizen Knowledge Graph" für die nächste Förderrunde des <a href="https://prototypefund.de/">Prototype Fund</a> in der Kategorie Civic Tech beworben. Die Förderphase wird 6 Monate lang ab März 2024 dauern. Wir werden eine Vollzeitstelle untereinander aufteilen.</p>
 
     <h3>Das Team</h3>
     <p>Wir sind alle drei <a href="https://digitalservice.bund.de/fellowships/tech4germany">Tech4Germany</a> Alumni. <a href="https://github.com/benjaminaaron">Benjamin</a> arbeitet aktuell als Softwareentwickler im Projekt "Neues Rechtsinformationssystem" beim DigitalService. <a href="https://espinosaureta.com/">Vanessa</a> verbessert bei ifok digitale Dienstleistungen der Verwaltung. Und <a href="https://github.com/wbglaeser">Ben</a> entwickelt als Data Engineer Machine Learning Modelle bei SoundCloud. Kontakt: <a href="mailto:citizenknowledgegraph@googlegroups.com">citizenknowledgegraph@googlegroups.com</a></p>
