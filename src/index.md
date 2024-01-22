@@ -27,7 +27,10 @@ layout: layout.njk
             <a href="https://background.tagesspiegel.de/smart-city/proaktive-verwaltung-als-selfmade-loesung">Tagespiegel Background Artikel</a>
         </li>
         <li>
-            <a href="https://youtu.be/2poGL8CeD8U">Demo-Video des Prototyp</a>
+            <a href="https://youtu.be/2poGL8CeD8U">Demo-Video eines GUI-Prototyps</a>
+        </li>
+       <li>
+            <a href="https://www.youtube.com/watch?v=E9A5CuIhi58&list=PLyt46q60EbD_mT4BPbkHtHCaWCOCX-PlP&index=3">Demo-Video eines Prototyps mit Fokus auf semantischen Technologien (Englisch, Untertitel lassen sich automatisch auf Deutsch übersetzen)</a>
         </li>
         <li>
             <a href="https://github.com/Citizen-Knowledge-Graph/">Unser Code auf GitHub</a>
